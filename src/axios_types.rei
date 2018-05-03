@@ -32,6 +32,6 @@ type proxy = {
   "auth": auth
 };
 
-type onProgress('a) = Js.t('a) => unit;
+type onProgress = Webapi.Dom.ProgressEvent.t => unit;
 
 type validateStatus = int => bool;

@@ -14,7 +14,7 @@ type response('a, 'b) = {
   "status": int,
   "statusText": string,
   "headers": Js.t('b),
-  "config": config,
+  "config": config
 };
 
 type adapter('a, 'b) = config => Js.Promise.t(response('a, 'b));
@@ -22,16 +22,16 @@ type adapter('a, 'b) = config => Js.Promise.t(response('a, 'b));
 type auth = {
   .
   "username": string,
-  "password": string,
+  "password": string
 };
 
 type proxy = {
   .
   "host": int,
   "port": int,
-  "auth": auth,
+  "auth": auth
 };
 
-type onProgress('a) = Js.t('a) => unit;
+type onProgress('a) = Webapi.Dom.ProgressEvent.t => unit;
 
 type validateStatus = int => bool;

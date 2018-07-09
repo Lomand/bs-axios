@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/meafmira/bs-axios#readme",
   "dependancies": {
-      "bs-webapi": "https://github.com/reasonml-community/bs-webapi-incubator",
+      "bs-webapi": "https://github.com/reasonml-community/bs-webapi-incubator"
   },
   "devDependencies": {
     "bs-platform": "^3.0.0",
